@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7dfab3bb-a375-48fb-bce7-fa3a544c1525" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
     </list>
     <ignored path="ndzxapi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+            <state relative-caret-position="230">
+              <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -93,7 +92,6 @@
         <option value="$PROJECT_DIR$/public/angular/app/scripts/services.js" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
-        <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_09_12_171354_create_times_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_09_12_172147_create_dishes_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_09_12_172849_create_admins_table.php" />
@@ -103,6 +101,7 @@
         <option value="$PROJECT_DIR$/database/migrations/2016_09_12_171627_create_orders_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_09_12_171108_create_userinfos_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/config/database.php" />
       </list>
     </option>
   </component>
@@ -169,6 +168,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ndzxapi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ndzxapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ndzxapi" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -428,12 +441,12 @@
       <workItem from="1473294821236" duration="3339000" />
       <workItem from="1473647529242" duration="2269000" />
       <workItem from="1473664893491" duration="285000" />
-      <workItem from="1473665249980" duration="6464000" />
+      <workItem from="1473665249980" duration="6623000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="366223000" />
+    <option name="totallyTimeSpent" value="366382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-230" width="1936" height="1056" extended-state="0" />
@@ -490,20 +503,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/UserinfoController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1389">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="133" column="5" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-469">
@@ -1627,28 +1626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
-          <folding>
-            <marker date="1473671394960" expanded="true" signature="6:175" ph="//..." />
-            <marker date="1473671394960" expanded="true" signature="185:4034" ph="..." />
-            <marker date="1473671394960" expanded="true" signature="193:612" ph="..." />
-            <marker date="1473671394960" expanded="true" signature="656:1092" ph="..." />
-            <marker date="1473671394960" expanded="true" signature="1151:1799" ph="..." />
-            <marker date="1473671394960" expanded="true" signature="1825:2849" ph="..." />
-            <marker date="1473671394960" expanded="true" signature="1848:1999" ph="..." />
-            <marker date="1473671394960" expanded="true" signature="2023:2504" ph="..." />
-            <marker date="1473671394960" expanded="true" signature="2508:2843" ph="//..." />
-            <marker date="1473671394960" expanded="true" signature="2859:3292" ph="..." />
-            <marker date="1473671394960" expanded="true" signature="3337:3756" ph="..." />
-            <marker date="1473671394960" expanded="true" signature="3776:4030" ph="..." />
-            <marker date="1473671394960" expanded="true" signature="3828:4022" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_12_172849_create_admins_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
@@ -1787,8 +1764,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        <state relative-caret-position="759">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <marker date="1473673128633" expanded="false" signature="11:94" ph="..." />
+            <marker date="1473673128633" expanded="true" signature="136:713" ph="{...}" />
+            <marker date="1473673128633" expanded="true" signature="146:206" ph=" Run the migrations. ..." />
+            <marker date="1473673128633" expanded="true" signature="233:566" ph="{...}" />
+            <marker date="1473673128633" expanded="true" signature="263:558" ph="..." />
+            <marker date="1473673128633" expanded="true" signature="301:557" ph="..." />
+            <marker date="1473673128633" expanded="true" signature="575:639" ph=" Reverse the migrations. ..." />
+            <marker date="1473673128633" expanded="true" signature="668:711" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/Middleware/GetUserFromToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <marker date="1470704692354" expanded="false" signature="9:217" ph="..." />
+            <marker date="1470704692354" expanded="false" signature="262:352" ph="..." />
+            <marker date="1470704692354" expanded="true" signature="399:1362" ph="{...}" />
+            <marker date="1470704692354" expanded="true" signature="409:559" ph=" Handle an incoming request. ..." />
+            <marker date="1470704692354" expanded="true" signature="614:1360" ph="{...}" />
+            <marker date="1470704692354" expanded="true" signature="692:783" ph="..." />
+            <marker date="1470704692354" expanded="true" signature="799:863" ph="..." />
+            <marker date="1470704692354" expanded="true" signature="899:1008" ph="..." />
+            <marker date="1470704692354" expanded="true" signature="1035:1144" ph="..." />
+            <marker date="1470704692354" expanded="true" signature="1169:1264" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/JWTAuth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+          <folding>
+            <marker date="1473046755346" expanded="false" signature="9:217" ph="..." />
+            <marker date="1473046755346" expanded="false" signature="251:414" ph="..." />
+            <marker date="1473046755346" expanded="true" signature="429:7445" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="439:483" ph=" @var \Tymon\JWTAuth\JWTManager ..." />
+            <marker date="1473046755346" expanded="true" signature="518:580" ph=" @var \Tymon\JWTAuth\Providers\User\UserInterface ..." />
+            <marker date="1473046755346" expanded="true" signature="612:674" ph=" @var \Tymon\JWTAuth\Providers\Auth\AuthInterface ..." />
+            <marker date="1473046755346" expanded="true" signature="706:749" ph=" @var \Illuminate\Http\Request ..." />
+            <marker date="1473046755346" expanded="true" signature="784:809" ph=" @var string ..." />
+            <marker date="1473046755346" expanded="true" signature="854:893" ph=" @var \Tymon\JWTAuth\Token ..." />
+            <marker date="1473046755346" expanded="true" signature="926:1194" ph=" @param \Tymon\JWTAuth\JWTManager                   $manager ..." />
+            <marker date="1473046755346" expanded="true" signature="1309:1449" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="1458:1599" ph=" Find a user using the user identifier in the subject claim. ..." />
+            <marker date="1473046755346" expanded="true" signature="1644:1842" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="1777:1812" ph="..." />
+            <marker date="1473046755346" expanded="true" signature="1851:2025" ph=" Generate a token using the user identifier as the subject claim. ..." />
+            <marker date="1473046755346" expanded="true" signature="2089:2240" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="2249:2426" ph=" Attempt to authenticate the user and return the token. ..." />
+            <marker date="1473046755346" expanded="true" signature="2507:2682" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="2571:2606" ph="..." />
+            <marker date="1473046755346" expanded="true" signature="2691:2799" ph=" Authenticate a user via a token. ..." />
+            <marker date="1473046755346" expanded="true" signature="2850:3029" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="2950:2985" ph="..." />
+            <marker date="1473046755346" expanded="true" signature="3038:3140" ph=" Refresh an expired token. ..." />
+            <marker date="1473046755346" expanded="true" signature="3186:3297" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="3306:3426" ph=" Invalidate a token (add it to the blacklist). ..." />
+            <marker date="1473046755346" expanded="true" signature="3475:3582" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="3591:3653" ph=" Get the token. ..." />
+            <marker date="1473046755346" expanded="true" signature="3686:3907" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="3722:3870" ph="..." />
+            <marker date="1473046755346" expanded="true" signature="3740:3790" ph="..." />
+            <marker date="1473046755346" expanded="true" signature="3817:3860" ph="..." />
+            <marker date="1473046755346" expanded="true" signature="3916:4038" ph=" Get the raw Payload instance. ..." />
+            <marker date="1473046755346" expanded="true" signature="4087:4190" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="4199:4311" ph=" Parse the token from the request. ..." />
+            <marker date="1473046755346" expanded="true" signature="4409:4715" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="4482:4667" ph="..." />
+            <marker date="1473046755346" expanded="true" signature="4549:4657" ph="..." />
+            <marker date="1473046755346" expanded="true" signature="4724:4880" ph=" Parse token from the authorization header. ..." />
+            <marker date="1473046755346" expanded="true" signature="4968:5190" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="5090:5125" ph="..." />
+            <marker date="1473046755346" expanded="true" signature="5199:5354" ph=" Create a Payload instance. ..." />
+            <marker date="1473046755346" expanded="true" signature="5427:5568" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="5491:5560" ph="..." />
+            <marker date="1473046755346" expanded="true" signature="5577:5678" ph=" Set the identifier. ..." />
+            <marker date="1473046755346" expanded="true" signature="5727:5803" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="5812:5874" ph=" Get the identifier. ..." />
+            <marker date="1473046755346" expanded="true" signature="5912:5958" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="5967:6058" ph=" Set the token. ..." />
+            <marker date="1473046755346" expanded="true" signature="6097:6174" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="6183:6355" ph=" Ensure that a token is available. ..." />
+            <marker date="1473046755346" expanded="true" signature="6401:6577" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="6456:6529" ph="..." />
+            <marker date="1473046755346" expanded="true" signature="6586:6663" ph=" Set the request instance. ..." />
+            <marker date="1473046755346" expanded="true" signature="6714:6784" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="6793:6883" ph=" Get the JWTManager instance. ..." />
+            <marker date="1473046755346" expanded="true" signature="6915:6958" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="6967:7155" ph=" Magically call the JWT Manager. ..." />
+            <marker date="1473046755346" expanded="true" signature="7206:7443" ph="{...}" />
+            <marker date="1473046755346" expanded="true" signature="7266:7356" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
           <folding />
         </state>
       </provider>
