@@ -5,7 +5,7 @@
 'use strict';
 
 angular.module('ndzxApp')
-    .constant("baseURL", "45.32.57.234/api/")
+    .constant("baseURL", "https://ndzxdc.herokuapp.com/api/")
 
     // 登录控制器
     .controller('LoginController', ['$scope', 'ngDialog', '$localStorage', 'AuthFactory', '$state', function ($scope, ngDialog, $localStorage, AuthFactory, $state) {
@@ -19,6 +19,7 @@ angular.module('ndzxApp')
             ngDialog.close();
 
         };
+        
 
         $scope.openRegister = function () {
             ngDialog.open({ template: 'angular/app/views/admin/register.html', scope: $scope, className: 'ngdialog-theme-default', controller:"RegisterController" });

@@ -5,7 +5,7 @@
 'use strict';
 
 angular.module('ndzxApp')
-    .constant("baseURL", "45.32.57.234/api/")
+    .constant("baseURL", "https://ndzxdc.herokuapp.com/api/")
     .factory('adminFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
 
         return $resource(baseURL + "admins/:id", null, {
@@ -15,6 +15,7 @@ angular.module('ndzxApp')
         });
 
     }])
+    
 
     .factory('depositFactory', ['$resource', 'baseURL', function ($resource, baseURL) {
 

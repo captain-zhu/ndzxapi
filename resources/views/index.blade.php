@@ -12,13 +12,13 @@
     <!-- Bootstrap -->
     <!-- 以下的注释是为了使两个注释之间的css文件合为一个 -->
     <!-- build:css styles/main.css -->
-    <link href='{{ URL::asset('angular/node_modules/bootstrap/dist/css/bootstrap.min.css') }}' rel="stylesheet">
-    <link href='{{ URL::asset('angular/node_modules/bootstrap/dist/css/bootstrap-theme.min.css') }}' rel="stylesheet">
-    <link href='{{ URL::asset('angular/node_modules/font-awesome/css/font-awesome.min.css') }}' rel="stylesheet">
-    <link href='{{ URL::asset('angular/node_modules/ng-dialog/css/ngDialog.min.css') }}' rel="stylesheet">
-    <link href='{{ URL::asset('angular/node_modules/ng-dialog/css/ngDialog-theme-plain.min.css') }}' rel="stylesheet">
-    <link href='{{ URL::asset('angular/node_modules/ng-dialog/css/ngDialog-theme-default.min.css') }}' rel="stylesheet">
-    <link href='{{ URL::asset('angular/app/styles/mystyles.css') }}' rel="stylesheet">
+    <link href='{{ secure_asset('angular/node_modules/bootstrap/dist/css/bootstrap.min.css') }}' rel="stylesheet">
+    <link href='{{ secure_asset('angular/node_modules/bootstrap/dist/css/bootstrap-theme.min.css') }}' rel="stylesheet">
+    <link href='{{ secure_asset('angular/node_modules/font-awesome/css/font-awesome.min.css') }}' rel="stylesheet">
+    <link href='{{ secure_asset('angular/node_modules/ng-dialog/css/ngDialog.min.css') }}' rel="stylesheet">
+    <link href='{{ secure_asset('angular/node_modules/ng-dialog/css/ngDialog-theme-plain.min.css') }}' rel="stylesheet">
+    <link href='{{ secure_asset('angular/node_modules/ng-dialog/css/ngDialog-theme-default.min.css') }}' rel="stylesheet">
+    <link href='{{ secure_asset('angular/app/styles/mystyles.css') }}' rel="stylesheet">
     <!-- endbuild -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -39,18 +39,18 @@
 
 <!-- 以下的注释是为了使两个注释之间的js文件合为一个 -->
 <!-- build:js scripts/main.js -->
-<script src='{{ URL::asset('angular/node_modules/angular/angular.min.js') }}'></script>
-<script src='{{ URL::asset('angular/node_modules/angular-i18n/angular-locale_zh-cn.js') }}'></script>
-<script src="{{ URL::asset('angular/node_modules/angular-animate/angular-animate.min.js') }}"></script>
-<script src="{{ URL::asset('angular/node_modules/angular-touch/angular-touch.min.js') }}"></script>
-<script src="{{ URL::asset('angular/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js') }}"></script>
-<script src='{{ URL::asset('angular/node_modules/angular-ui-router/release/angular-ui-router.min.js') }}'></script>
-<script src='{{ URL::asset('angular/node_modules/angular-resource/angular-resource.min.js') }}'></script>
-<script src='{{ URL::asset('angular/node_modules/ng-dialog/js/ngDialog.min.js') }}'></script>
-<script src='{{ URL::asset('angular/app/scripts/app.js') }}'></script>
-<script src='{{ URL::asset('angular/app/scripts/controllers.js') }}'></script>
-<script src='{{ URL::asset('angular/app/scripts/services.js') }}'></script>
-<script src='{{ URL::asset('angular/app/scripts/filters.js') }}'></script>
+<script src='{{ secure_asset('angular/node_modules/angular/angular.min.js') }}'></script>
+<script src='{{ secure_asset('angular/node_modules/angular-i18n/angular-locale_zh-cn.js') }}'></script>
+<script src="{{ secure_asset('angular/node_modules/angular-animate/angular-animate.min.js') }}"></script>
+<script src="{{ secure_asset('angular/node_modules/angular-touch/angular-touch.min.js') }}"></script>
+<script src="{{ secure_asset('angular/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js') }}"></script>
+<script src='{{ secure_asset('angular/node_modules/angular-ui-router/release/angular-ui-router.min.js') }}'></script>
+<script src='{{ secure_asset('angular/node_modules/angular-resource/angular-resource.min.js') }}'></script>
+<script src='{{ secure_asset('angular/node_modules/ng-dialog/js/ngDialog.min.js') }}'></script>
+<script src='{{ secure_asset('angular/app/scripts/app.js') }}'></script>
+<script src='{{ secure_asset('angular/app/scripts/controllers.js') }}'></script>
+<script src='{{ secure_asset('angular/app/scripts/services.js') }}'></script>
+<script src='{{ secure_asset('angular/app/scripts/filters.js') }}'></script>
 <!-- endbuild -->
 
 </body>
