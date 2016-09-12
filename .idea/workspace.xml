@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7dfab3bb-a375-48fb-bce7-fa3a544c1525" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
     </list>
     <ignored path="ndzxapi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/database.php">
+      <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
+            <state relative-caret-position="414">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -51,8 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/angular/app/views/admin/groupdeposit.html" />
-        <option value="$PROJECT_DIR$/public/angular/app/views/home.html" />
         <option value="$PROJECT_DIR$/app/Models/Order.php" />
         <option value="$PROJECT_DIR$/public/angular/app/views/admin/home.html" />
         <option value="$PROJECT_DIR$/public/angular/package.json" />
@@ -102,6 +102,8 @@
         <option value="$PROJECT_DIR$/public/angular/app/scripts/services.js" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
       </list>
     </option>
   </component>
@@ -235,99 +237,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ndzxapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ndzxapi" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ndzxapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ndzxapi" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ndzxapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ndzxapi" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ndzxapi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ndzxapi" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -342,6 +252,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -577,19 +491,19 @@
       <workItem from="1473294821236" duration="3339000" />
       <workItem from="1473647529242" duration="2269000" />
       <workItem from="1473664893491" duration="285000" />
-      <workItem from="1473665249980" duration="1830000" />
+      <workItem from="1473665249980" duration="3538000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="361589000" />
+    <option name="totallyTimeSpent" value="363297000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-230" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -639,20 +553,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/APIAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/Facades/JWTAuth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -917,33 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          <folding>
-            <marker date="1473665264531" expanded="true" signature="15:8944" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="23:451" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="505:928" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="979:1395" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="1473:1897" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="1933:2372" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="2408:2839" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="2881:3302" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="3374:3868" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="3969:4401" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="4425:6489" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="4437:4497" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="5778:5832" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="6047:6166" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="6235:6325" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="6403:6437" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="6499:6913" ph="..." />
-            <marker date="1473665264531" expanded="true" signature="6935:8940" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1850,10 +1723,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3377">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <folding>
+            <marker date="1473665264531" expanded="true" signature="15:8944" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="23:451" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="505:928" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="979:1395" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="1473:1897" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="1933:2372" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="2408:2839" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="2881:3302" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="3374:3868" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="3969:4401" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="4425:6489" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="4437:4497" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="5778:5832" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="6047:6166" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="6235:6325" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="6403:6437" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="6499:6913" ph="..." />
+            <marker date="1473665264531" expanded="true" signature="6935:8940" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
+        <state relative-caret-position="874">
+          <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
+          <folding>
+            <marker date="1473669905925" expanded="true" signature="7:172" ph="//..." />
+            <marker date="1473669905925" expanded="true" signature="182:4031" ph="..." />
+            <marker date="1473669905925" expanded="true" signature="190:609" ph="..." />
+            <marker date="1473669905925" expanded="true" signature="653:1089" ph="..." />
+            <marker date="1473669905925" expanded="true" signature="1148:1796" ph="..." />
+            <marker date="1473669905925" expanded="true" signature="1822:2846" ph="..." />
+            <marker date="1473669905925" expanded="true" signature="1845:1996" ph="..." />
+            <marker date="1473669905925" expanded="true" signature="2020:2501" ph="..." />
+            <marker date="1473669905925" expanded="true" signature="2505:2840" ph="//..." />
+            <marker date="1473669905925" expanded="true" signature="2856:3289" ph="..." />
+            <marker date="1473669905925" expanded="true" signature="3334:3753" ph="..." />
+            <marker date="1473669905925" expanded="true" signature="3773:4027" ph="..." />
+            <marker date="1473669905925" expanded="true" signature="3825:4019" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding>
+            <marker date="1473670131903" expanded="false" signature="11:94" ph="..." />
+            <marker date="1473670131903" expanded="true" signature="145:645" ph="{...}" />
+            <marker date="1473670131903" expanded="true" signature="155:215" ph=" Run the migrations. ..." />
+            <marker date="1473670131903" expanded="true" signature="242:488" ph="{...}" />
+            <marker date="1473670131903" expanded="true" signature="272:480" ph="..." />
+            <marker date="1473670131903" expanded="true" signature="320:479" ph="..." />
+            <marker date="1473670131903" expanded="true" signature="497:561" ph=" Reverse the migrations. ..." />
+            <marker date="1473670131903" expanded="true" signature="590:643" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding />
         </state>
       </provider>
