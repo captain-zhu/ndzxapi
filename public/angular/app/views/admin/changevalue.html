@@ -1,0 +1,22 @@
+<div class="ngdialog-message">
+    <div class="">
+        <h3>修改价格</h3>
+    </div>
+    <div class="">&nbsp;</div>
+    <div class="col-xs-12 alert alert-warning" ng-if="show.showChangeValueError">
+        {{show.changeValueError}}
+    </div>
+    <div class="">
+        <p>原价格: {{ originalValue }}</p>
+        <form name="changeValueForm" ng-submit="doChangeValue()">
+            <div class="input-group">
+                <label class="input-group-addon">价格</label>
+                <input ng-if="changeType == 1" type="text" class="form-control input-sm" placeholder="0" ng-model="breakfast.value" required>
+                <input ng-if="changeType == 2" type="text" class="form-control input-sm" placeholder="0" ng-model="lunch.value" required>
+                <input ng-if="changeType == 3" type="text" class="form-control input-sm" placeholder="0" ng-model="dinner.value" required>
+            </div>
+            <button type="submit" class="btn btn-info btn-sm">确认修改</button>
+            <button type="button" class="btn btn-default btn-sm" ng-click=closeThisDialog("Cancel")>取消</button> &nbsp; &nbsp;
+        </form>
+    </div>
+</div>

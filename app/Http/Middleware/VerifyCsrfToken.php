@@ -13,6 +13,7 @@ class VerifyCsrfToken extends BaseVerifier
      */
     protected $except = [
         // 排除微信的相关路由
-        'wxservice'
+        'wxservice',
+        'api/*'
     ];
 }

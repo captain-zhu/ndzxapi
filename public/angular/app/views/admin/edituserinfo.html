@@ -1,0 +1,29 @@
+<div class="ngdialog-message">
+    <div class="">
+        <h3>编辑用户信息</h3>
+    </div>
+    <div class="">&nbsp;</div>
+    <div class="col-xs-12 alert alert-warning" ng-if="!showUserinfo">
+        {{userinfomessage}}
+    </div>
+    <div class="">
+        <p>用户名: {{ user.userinfo.name }}</p>
+        <form name="userinfoForm" ng-submit="doEdit()">
+            <div class="input-group">
+                <label class="input-group-addon" for="name">用户名</label>
+                <input type="text" class="form-control input-sm" id="name" placeholder="用户名" ng-model="user.userinfo.name" required>
+            </div>
+            <div class="input-group">
+                <label class="input-group-addon" for="telephone">电话号码</label>
+                <input type="text" class="form-control input-sm" id="telephone" placeholder="电话号码" ng-model="user.userinfo.telephone" required>
+            </div>
+            <div class="input-group">
+                <label class="input-group-addon" for="telephone">用户分组</label>
+                <input type="text" class="form-control input-sm" id="privilege" placeholder="用户分组" ng-model="user.privilege" required>
+            </div>
+            <button type="submit" class="btn btn-info btn-sm">确认修改</button>
+            <button type="button" class="btn btn-default btn-sm" ng-click=closeThisDialog("Cancel")>取消</button> &nbsp; &nbsp;
+            <!--<a ng-click=openRegister()>Click here to register</a>-->
+        </form>
+    </div>
+</div>

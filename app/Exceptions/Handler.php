@@ -45,6 +45,12 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $e)
     {
+        if ($e instanceof \App\Exceptions\MyOwnException)
+            return ''; // Do something if this exception is thrown here.
+
+        if ($e instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException)
+            return response()->view('index');
+
         return parent::render($request, $e);
     }
 }

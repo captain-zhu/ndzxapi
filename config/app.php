@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://fz.garmintech.net'),
+    'url' => env('APP_URL', '45.32.57.234/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'locale' => 'zh-CN',
+    'locale' => 'zh_cn',
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'zh-CN',
+    'fallback_locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -164,6 +164,17 @@ return [
          */
         Overtrue\LaravelWechat\ServiceProvider::class,
 
+        /*
+         * jwt-auth 服务
+         * https://packagist.org/packages/tymon/jwt-auth
+         */
+
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+
+        /*
+         * laravel-cors
+         */
+        Barryvdh\Cors\ServiceProvider::class
     ],
 
     /*
@@ -211,6 +222,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Wechat' => Overtrue\LaravelWechat\Facade::class,
         'EasyWeChat' => Overtrue\LaravelWechat\Facade::class,
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class
     ],
 
 ];

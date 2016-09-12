@@ -1,0 +1,20 @@
+<div class="ngdialog-message">
+    <div class="">
+        <h3>修改开始时间</h3>
+    </div>
+    <div class="">&nbsp;</div>
+    <div class="col-xs-12 alert alert-warning" ng-if="show.showChangeStartTimeError">
+        {{show.changeStartTimeError}}
+    </div>
+    <div class="">
+        <p>改变订餐开始时间</p>
+        <form name="changeStartTimeForm" ng-submit="doChangeStartTime()">
+            <div class="input-group">
+                <label class="input-group-addon">订餐开始时间</label>
+                <input type="time" class="form-control input-sm" ng-model="startTimeData.time" required>
+            </div>
+            <button type="submit" class="btn btn-info btn-sm">确认修改</button>
+            <button type="button" class="btn btn-default btn-sm" ng-click=closeThisDialog("Cancel")>取消</button> &nbsp; &nbsp;
+        </form>
+    </div>
+</div>

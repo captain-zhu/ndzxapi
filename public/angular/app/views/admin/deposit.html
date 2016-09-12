@@ -1,0 +1,22 @@
+<div class="ngdialog-message">
+    <div class="">
+        <h3>充值</h3>
+    </div>
+    <div class="">&nbsp;</div>
+    <div class="col-xs-12 alert alert-warning" ng-if="!showDeposit">
+        {{depositMessage}}
+    </div>
+    <div class="">
+        <p>用户名: {{ user.userinfo.name }}</p>
+        <form name="depositForm" ng-submit="doDeposit()">
+            <div class="input-group">
+                <label class="input-group-addon" for="goldValue">充值金额</label>
+                <input type="text" class="form-control input-sm" id="goldValue" placeholder="0" ng-model="depositorder.value" required>
+                <label class="input-group-addon">元</label>
+            </div>
+            <button type="submit" class="btn btn-info btn-sm">确认充值</button>
+            <button type="button" class="btn btn-default btn-sm" ng-click=closeThisDialog("Cancel")>取消</button> &nbsp; &nbsp;
+            <!--<a ng-click=openRegister()>Click here to register</a>-->
+        </form>
+    </div>
+</div>

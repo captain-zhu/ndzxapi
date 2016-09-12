@@ -1,0 +1,25 @@
+<header class="jumbotron">
+
+    <!-- Main component for a primary marketing message or call to action -->
+
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-xs-12 col-sm-8">
+                <h1>宁都中学订餐系统</h1>
+                <p style="padding:20px;"></p>
+                <p>宁都中学食堂致力于为学生、教职工提供更好、更健康、更实惠的饭餐</p>
+            </div>
+            <div class="col-xs-12 col-sm-2">
+                <!--<p style="padding:20px;"></p>-->
+                <!--<div class="col-xs-12 center-block">-->
+                    <!--<a class="btn btn-primary btn-block" ui-sref="admin.users">普通用户入口</a>-->
+                <!--</div>-->
+                <p style="padding:20px;"></p>
+                <div class="col-xs-12 center-block">
+                    <a class="btn btn-danger btn-block" ng-if="!loggedIn" ng-click="openLogin()">管理员入口</a>
+                    <a class="btn btn-danger btn-block" ng-if="loggedIn" ui-sref="admin">管理员入口</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

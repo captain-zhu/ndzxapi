@@ -1,0 +1,50 @@
+<div class="ngdialog-message">
+    <div class="">
+        <h3>订餐-订餐者:{{ user.userinfo.name }}</h3>
+    </div>
+    <div class="">&nbsp;</div>
+    <div class="col-xs-12 alert alert-warning" ng-if="showOrderError">
+        <strong>{{orderMessage}}</strong>
+    </div>
+    <div class="" ng-if="showOrder">
+        <!-- 早餐 -->
+        <div class="col-xs-12">
+            <div>{{ orderData.date }}日早餐&nbsp;&nbsp;价格：{{ menus[0].value }}元</div>
+            <div>订早餐状态:{{ orderInfos.breakfast }}</div>
+            <form ng-submit="orderBreakfast()">
+                <div class="input-group" style="margin-top: 5px;">
+                    <label class="input-group-addon">份数</label>
+                    <input type="text" class="form-control input-sm" ng-model="orderData.breakfast">
+                </div>
+                <button type="submit" class="btn btn-default btn-block" style="margin-top: 5px;">订早餐</button>
+            </form>
+        </div>
+        <!-- 午餐 -->
+        <div class="col-xs-12" style="margin-top: 10px;">
+            <div>{{ orderData.date }}日午餐&nbsp;&nbsp;价格：{{ menus[1].value }}元</div>
+            <div>订午餐状态:{{ orderInfos.lunch }}</div>
+            <form ng-submit="orderLunch()">
+                <div class="input-group" style="margin-top: 5px;">
+                    <label class="input-group-addon">份数</label>
+                    <input type="text" class="form-control input-sm" ng-model="orderData.lunch">
+                </div>
+                <button type="submit" class="btn btn-default btn-block" style="margin-top: 5px;">订午餐</button>
+            </form>
+        </div>ionic
+        <!-- 晚餐 -->
+        <div class="col-xs-12" style="margin-top: 10px;">
+            <div>{{ orderData.date }}日晚餐&nbsp;&nbsp;价格：{{ menus[2].value }}元</div>
+            <div>订晚餐状态:{{ orderInfos.dinner }}</div>
+            <form ng-submit="orderDinner()">
+                <div class="input-group" style="margin-top: 5px;">
+                    <label class="input-group-addon">份数</label>
+                    <input type="text" class="form-control input-sm" id="dinner" placeholder="0" ng-model="orderData.dinner">
+                </div>
+                <button type="submit" class="btn btn-default btn-block" style="margin-top: 5px;">订晚餐</button>
+            </form>
+        </div>
+        <div>
+            <button type="button" class="btn btn-default btn-sm btn-block" style="margin-top: 20px;" ng-click=closeThisDialog("Cancel")>取消</button> &nbsp; &nbsp;
+        </div>
+    </div>
+</div>

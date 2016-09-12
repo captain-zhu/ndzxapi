@@ -1,0 +1,148 @@
+<div class="container" style="margin-top: 30px">
+    <!-- 错误信息开始 -->
+    <div class="col-xs-12 col-md-4 col-md-offset-4 center-block">
+        <div class="alert alert-warning" ng-if="!showMenus">
+            {{ errorMsgForMenus }}
+        </div>
+    </div>
+    <!-- 错误信息结束-->
+    <!-- accordions模板开始-->
+    <script type="text/ng-template" id="group-template.html">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title" style="color:#fa39c3">
+                    <a href tabindex="0" class="accordion-toggle" ng-click="toggleOpen()" uib-accordion-transclude="heading">
+                                        <span uib-accordion-header ng-class="{'text-muted': isDisabled}">
+                                          {{heading}}
+                                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div class="panel-collapse collapse" uib-collapse="!isOpen">
+                <div class="panel-body" ng-transclude></div>
+            </div>
+        </div>
+    </script>
+    <!-- accordions模板结束 -->
+    <!-- 菜单开始 -->
+    <div class="col-xs-12">
+        <!-- 早餐菜单开始 -->
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">早餐菜单</div>
+                <div class="panel-body">
+                    <!-- 早餐错误开始 -->
+                    <div class="alert alert-warning" ng-if="showBreakfastError">
+                        {{ breakfastError }}
+                    </div>
+                    <!-- 早餐错误结束 -->
+                    <div class="col-xs-12">
+                        <div><span>价格:{{ breakfast.value }}元</span><a ng-click="changeValue(1, breakfast.value)" class="pull-right">修改</a></div>
+                        <div>订餐开始时间:{{ breakfast.dinner.start_time }}<a ng-click="changeStartTime(1)" class="pull-right">修改</a></div>
+                        <div>订餐结束时间:{{ breakfast.dinner.end_time }}<a ng-click="changeEndTime(1)" class="pull-right">修改</a></div>
+                        <div ng-if="breakfast.dinner.state == 0">订餐状态：可以订餐<a ng-click="toggleState(1, breakfast.dinner.state)" class="pull-right">停止订餐</a></div>
+                        <div ng-if="breakfast.dinner.state == 1">订餐状态：停止订餐<a ng-click="toggleState(1, breakfast.dinner.state)" class="pull-right">允许订餐</a></div>
+                    </div>
+                    <div class="col-xs-12" style="margin-top: 10px;">
+                        <uib-accordion>
+                            <div uib-accordion-group class="panel-default" is-open="status.isBreakfastCustomHeaderOpen[$index]"
+                                 template-url="group-template.html"
+                                 ng-repeat="dish in breakfast.dishes">
+                                <uib-accordion-heading>
+                                    <span>{{ dish.name }}</span>
+                                    <i class="pull-right glyphicon"
+                                       ng-class="{'glyphicon-chevron-down': status.isBreakfastCustomHeaderOpen[$index], 'glyphicon-chevron-right': !status.isBreakfastCustomHeaderOpen[$index]}"></i>
+                                    <span class="pull-right">辣度:{{ dish.peppery_degree }}</span>
+                                </uib-accordion-heading>
+                                {{ dish.description }}
+                                <button class="col-xs-12 btn btn-primary center-block" ng-click="editDish(dish, 1)">编辑该菜品信息</button>
+                                <button class="col-xs-12 btn btn-danger center-block" ng-click="deleteDish(dish.id)">删除该菜品</button>
+                            </div>
+                        </uib-accordion>
+                        <button class="col-xs-12 btn btn-default center-block" ng-click="newDish(1)">新添菜品</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 早餐菜单结束 -->
+        <!-- 午餐菜单开始 -->
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">午餐菜单</div>
+                <div class="panel-body">
+                    <!-- 午餐错误开始 -->
+                    <div class="alert alert-warning" ng-if="showLunchError">
+                        {{ lunchError }}
+                    </div>
+                    <!-- 午餐错误结束 -->
+                    <div class="col-xs-12">
+                        <div>价格:{{ lunch.value }}元<a ng-click="changeValue(2, lunch.value)" class="pull-right">修改</a></div>
+                        <div>订餐开始时间:{{ lunch.dinner.start_time }}<a ng-click="changeStartTime(2)" class="pull-right">修改</a></div>
+                        <div>订餐结束时间:{{ lunch.dinner.end_time }}<a ng-click="changeEndTime(2)" class="pull-right">修改</a></div>
+                        <div ng-if="lunch.dinner.state == 0">订餐状态：可以订餐<a ng-click="toggleState(2, lunch.dinner.state)" class="pull-right">停止订餐</a></div>
+                        <div ng-if="lunch.dinner.state == 1">订餐状态：停止订餐<a ng-click="toggleState(2, lunch.dinner.state)" class="pull-right">允许订餐</a></div>
+                    </div>
+                    <div class="col-xs-12" style="margin-top: 10px;">
+                        <uib-accordion>
+                            <div uib-accordion-group class="panel-default" is-open="status.isLunchCustomHeaderOpen[$index]"
+                                 template-url="group-template.html"
+                                 ng-repeat="dish in lunch.dishes">
+                                <uib-accordion-heading>
+                                    <span>{{ dish.name }}</span>
+                                    <i class="pull-right glyphicon"
+                                       ng-class="{'glyphicon-chevron-down': status.isLunchCustomHeaderOpen[$index], 'glyphicon-chevron-right': !status.isLunchCustomHeaderOpen[$index]}"></i>
+                                    <span class="pull-right">辣度:{{ dish.peppery_degree }}</span>
+                                </uib-accordion-heading>
+                                {{ dish.description }}
+                                <button class="col-xs-12 btn btn-primary center-block" ng-click="editDish(dish, 2)">编辑该菜品信息</button>
+                                <button class="col-xs-12 btn btn-danger center-block" ng-click="deleteDish(dish.id)">删除该菜品</button>
+                            </div>
+                        </uib-accordion>
+                        <button class="col-xs-12 btn btn-default center-block" ng-click="newDish(2)">新添菜品</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 午餐菜单结束 -->
+        <!-- 晚餐菜单开始 -->
+        <div class="col-xs-12 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">晚餐菜单</div>
+                <div class="panel-body">
+                    <!-- 晚餐错误开始 -->
+                    <div class="alert alert-warning" ng-if="showDinnerError">
+                        {{ dinnerError }}
+                    </div>
+                    <!-- 晚餐错误结束 -->
+                    <div class="col-xs-12">
+                        <div>价格:{{ dinner.value }}元<a ng-click="changeValue(3, dinner.value)" class="pull-right">修改</a></div>
+                        <div>订餐开始时间:{{ dinner.dinner.start_time }}<a ng-click="changeStartTime(3)" class="pull-right">修改</a></div>
+                        <div>订餐结束时间:{{ dinner.dinner.end_time }}<a ng-click="changeEndTime(3)" class="pull-right">修改</a></div>
+                        <div ng-if="dinner.dinner.state == 0">订餐状态：可以订餐<a ng-click="toggleState(3, dinner.dinner.state)" class="pull-right">停止订餐</a></div>
+                        <div ng-if="dinner.dinner.state == 1">订餐状态：停止订餐<a ng-click="toggleState(3, dinner.dinner.state)" class="pull-right">允许订餐</a></div>
+                    </div>
+                    <div class="col-xs-12" style="margin-top: 10px;">
+                        <uib-accordion>
+                            <div uib-accordion-group class="panel-default" is-open="status.isDinnerCustomHeaderOpen[$index]"
+                                 template-url="group-template.html"
+                                 ng-repeat="dish in dinner.dishes">
+                                <uib-accordion-heading>
+                                    <span>{{ dish.name }}</span>
+                                    <i class="pull-right glyphicon"
+                                       ng-class="{'glyphicon-chevron-down': status.isDinnerCustomHeaderOpen[$index], 'glyphicon-chevron-right': !status.isDinnerCustomHeaderOpen[$index]}"></i>
+                                    <span class="pull-right">辣度:{{ dish.peppery_degree }}</span>
+                                </uib-accordion-heading>
+                                {{ dish.description }}
+                                <button class="col-xs-12 btn btn-primary center-block" ng-click="editDish(dish, 3)">编辑该菜品信息</button>
+                                <button class="col-xs-12 btn btn-danger center-block" ng-click="deleteDish(dish.id)">删除该菜品</button>
+                            </div>
+                        </uib-accordion>
+                        <button class="col-xs-12 btn btn-default center-block" ng-click="newDish(3)">新添菜品</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 晚餐菜单结束 -->
+    </div>
+    <!-- 菜单结束 -->
+</div>

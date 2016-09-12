@@ -85,13 +85,13 @@ class BuildMenuHelper extends Helper
             ],
             [
                 "type" => "view",
-                "name" => "完善信息",
+                "name" => "完善/修改信息",
                 "url"  => "http://fz.garmintech.net/user/"
             ]
         ];
 
         $matchRule = [
-            "group_id"             => "104"
+            "group_id"             => "103"
         ];
 
         $this->wechat->menu->add($buttons, $matchRule);
@@ -127,9 +127,9 @@ class BuildMenuHelper extends Helper
                 "name"       => "个人中心",
                 "sub_button" => [
                     [
-                        "type" => "click",
-                        "name" => "修改信息",
-                        "key"  => "fillUserInformation"
+                        "type" => "view",
+                        "name" => "修改个人信息",
+                        "url"  => "http://fz.garmintech.net/user/"
                     ],
                     [
                         "type" => "click",
@@ -138,8 +138,8 @@ class BuildMenuHelper extends Helper
                     ],
                     [
                         "type" => "click",
-                        "name" => "请求认证",
-                        "key" => "applyAuthenticate"
+                        "name" => "认证方式",
+                        "key" => "applyMethods"
                     ]
                 ],
             ],
@@ -182,19 +182,19 @@ class BuildMenuHelper extends Helper
                 "name" => "订餐",
                 "sub_button" => [
                     [
-                        "type" => "click",
-                        "name" => "订早晨",
-                        "key" => "orderBreakfast"
+                        "type" => "view",
+                        "name" => "订早餐",
+                        "url"  => "http://fz.garmintech.net/dinner/order/1"
                     ],
                     [
-                        "type" => "click",
+                        "type" => "view",
                         "name" => "订午餐",
-                        "key" => "orderLunch"
+                        "url"  => "http://fz.garmintech.net/dinner/order/2"
                     ],
                     [
-                        "type" => "click",
+                        "type" => "view",
                         "name" => "订晚餐",
-                        "key" => "orderDinner"
+                        "url"  => "http://fz.garmintech.net/dinner/order/3"
                     ]
                 ]
             ],
@@ -202,9 +202,9 @@ class BuildMenuHelper extends Helper
                 "name"       => "个人中心",
                 "sub_button" => [
                     [
-                        "type" => "click",
-                        "name" => "修改信息",
-                        "key"  => "fillUserInformation"
+                        "type" => "view",
+                        "name" => "修改个人信息",
+                        "url"  => "http://fz.garmintech.net/user/"
                     ],
                     [
                         "type" => "click",
@@ -212,19 +212,19 @@ class BuildMenuHelper extends Helper
                         "key" => "viewUserInformation"
                     ],
                     [
-                        "type" => "click",
+                        "type" => "view",
                         "name" => "充值",
-                        "key" => "deposit"
+                        "url" => "http://fz.garmintech.net/deposit"
                     ],
                     [
-                        "type" => "click",
+                        "type" => "view",
                         "name" => "查看今日订单",
-                        "key" => "viewTodayOrders"
+                        "url" => "http://fz.garmintech.net/order/me"
                     ],
                     [
-                        "type" => "click",
+                        "type" => "view",
                         "name" => "查看历史订单",
-                        "key" => "viewHistoryOrders"
+                        "url" => "http://fz.garmintech.net/order/history"
                     ]
                 ],
             ],

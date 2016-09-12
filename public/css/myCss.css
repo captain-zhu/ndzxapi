@@ -1,0 +1,27 @@
+.top-panel {
+    margin-top: 20px;
+}
+
+#userInputSubmit {
+    width:100%;
+    border-radius: 25px;
+}
+
+.badge .badge-danger {
+    background-color: #d43f3a !important;
+}
+.badge .badge-warning {
+    background-color: #d58512 !important;
+}
+
+.badge .badge-success {
+    background-color: #398439 !important;
+}
+
+.badge .badge-info {
+    background-color: #269abc !important;
+}
+
+.badge .badge-inverse {
+    background-color: #333333 !important;
+}

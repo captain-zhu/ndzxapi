@@ -9,9 +9,13 @@
 namespace App\Http\Controllers;
 
 use App\Helpers\BuildMenuHelper;
+use App\Helpers\UserGroupManageHelper;
+use App\Models\Admin;
+use App\Models\Dinner;
 use Log;
 use EasyWeChat\Foundation\Application;
 use App\Models\User;
+
 
 class WechatServiceController extends Controller
 {
@@ -35,15 +39,14 @@ class WechatServiceController extends Controller
                 $user = User::create([
                     'openid' => $openid,
                     'gold' => 0,
-                    'privilege' => 0
+                    'privilege' => "未分组"
                 ]);
                 $user->save();
-                # 将该用户的在公众号里的分组设为103,完善资料厚将移到104，认证后将移到105
-                $group = $wechat->user_group;
-                $group->moveUser($openid, 103);
             }
             $user = User::where('openid', '=', $openid)->first();
-            Log::info("user: " . $user->id);
+            # 如果用户已经认证，将其移到105组
+            $userGroupHelper = new UserGroupManageHelper($wechat);
+            $userGroupHelper->moveToNewGroup($openid, 2);
 
             #处理相应的消息类型
             switch ($message->MsgType) {
@@ -52,7 +55,7 @@ class WechatServiceController extends Controller
                     switch ($message->Event) {
                         #订阅
                         case "subscribe" :
-                            return "欢迎关注 宁都中学公众平台！";
+                            return "欢迎关注 宁都中学公众平台！\n请先在个人中心中完善个人信息";
                             break;
                         #退订
                         case "unsubscribe" :
@@ -60,54 +63,33 @@ class WechatServiceController extends Controller
                         #按键事件
                         case "CLICK" :
                             switch ($message->EventKey) {
-                                # 查看早晨菜单
-                                # TODO
+                                # 查看早餐菜单
                                 case "breakfastMenu":
-                                    return "查看早餐";
+                                    $dinner = Dinner::find(1);
+                                    if (is_null($dinner)) {
+                                        return "今日无早餐菜单";
+                                    }
+                                    return $dinner->getDinnerDescription();
                                     break;
                                 # 查看午餐菜单
-                                # TODO
                                 case "lunchMenu":
+                                    $dinner = Dinner::find(2);
+                                    if (is_null($dinner)) {
+                                        return "今日无午餐菜单";
+                                    }
+                                    return $dinner->getDinnerDescription();
                                     break;
                                 # 查看晚餐
-                                # TODO
                                 case "dinnerMenu":
-                                    break;
-                                # 订早餐
-                                # TODO
-                                case "orderBreakfast":
-                                    break;
-                                # 订午餐
-                                # TODO
-                                case "orderLunch":
-                                    break;
-                                # 订晚餐
-                                # TODO
-                                case "orderDinner":
-                                    break;
-                                # 完善用户信息
-                                # TODO
-                                case "fillUserInformation":
+                                    $dinner = Dinner::find(3);
+                                    if (is_null($dinner)) {
+                                        return "今日无晚餐菜单";
+                                    }
+                                    return $dinner->getDinnerDescription();
                                     break;
                                 # 查看用户信息
-                                # TODO
                                 case "viewUserInformation":
-                                    break;
-                                # 充值
-                                # TODO
-                                case "deposit":
-                                    break;
-                                # 查看今日订单
-                                # TODO
-                                case "viewTodayOrders":
-                                    break;
-                                # 查看历史订单
-                                # TODO
-                                case "viewHistoryOrders":
-                                    break;
-                                # 申请认证
-                                # TODO
-                                case "applyAuthenticate":
+                                    return $user->getUserinfoText();
                                     break;
                                 default:
                                     break;
@@ -147,7 +129,7 @@ class WechatServiceController extends Controller
                 // ... 其它消息
                 default:
                     # code...
-                    return "欢迎关注 宁都中学公众平台！";
+                    return "欢迎关注 宁都中学公众平台！\n请先在个人中心中完善个人信息";
                     break;
             }
         });
