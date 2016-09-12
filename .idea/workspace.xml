@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7dfab3bb-a375-48fb-bce7-fa3a544c1525" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
     </list>
     <ignored path="ndzxapi.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/database.php">
+      <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+            <state relative-caret-position="483">
+              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -52,14 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Models/Order.php" />
-        <option value="$PROJECT_DIR$/public/angular/app/views/admin/home.html" />
-        <option value="$PROJECT_DIR$/public/angular/package.json" />
-        <option value="$PROJECT_DIR$/app/Models/Deposit.php" />
-        <option value="$PROJECT_DIR$/public/angular/app/views/admin/header.html" />
-        <option value="$PROJECT_DIR$/public/angular/app/views/admin/footer.html" />
-        <option value="$PROJECT_DIR$/app/Models/Menu.php" />
-        <option value="$PROJECT_DIR$/public/angular/app/views/admin/changevalue.html" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/API/MenuController.php" />
         <option value="$PROJECT_DIR$/public/angular/app/views/admin/changestarttime.html" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/API/DinnerController.php" />
@@ -100,9 +92,17 @@
         <option value="$PROJECT_DIR$/public/angular/app/scripts/controllers.js" />
         <option value="$PROJECT_DIR$/public/angular/app/scripts/services.js" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_09_12_171354_create_times_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_09_12_172147_create_dishes_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_09_12_172849_create_admins_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_09_12_172601_create_deposits_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_09_12_172347_create_dinners_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_09_12_171947_create_menus_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_09_12_171627_create_orders_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2016_09_12_171108_create_userinfos_table.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
       </list>
     </option>
   </component>
@@ -428,12 +428,12 @@
       <workItem from="1473294821236" duration="3339000" />
       <workItem from="1473647529242" duration="2269000" />
       <workItem from="1473664893491" duration="285000" />
-      <workItem from="1473665249980" duration="4218000" />
+      <workItem from="1473665249980" duration="6464000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363977000" />
+    <option name="totallyTimeSpent" value="366223000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-230" width="1936" height="1056" extended-state="0" />
@@ -490,83 +490,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/Facades/JWTAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/Middleware/BaseMiddleware.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/Middleware/GetUserFromToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/Token.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/tymon/jwt-auth/src/JWTAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="208" column="5" selection-start-line="208" selection-start-column="5" selection-end-line="208" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DepositController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="37" selection-end-column="56" />
-          <folding>
-            <marker date="1471250175595" expanded="false" signature="9:90" ph=" Created by PhpStorm. ..." />
-            <marker date="1471250175595" expanded="false" signature="131:248" ph="..." />
-            <marker date="1471250175595" expanded="true" signature="302:395" ph=" 获得充值的页面 ..." />
-            <marker date="1471250175595" expanded="true" signature="430:486" ph="{...}" />
-            <marker date="1471250175595" expanded="true" signature="537:1900" ph="{...}" />
-            <marker date="1471250175595" expanded="true" signature="568:644" ph="..." />
-            <marker date="1471250175595" expanded="true" signature="579:643" ph="..." />
-            <marker date="1471250175595" expanded="true" signature="964:1368" ph="..." />
-            <marker date="1471250175595" expanded="true" signature="1584:1854" ph="..." />
-            <marker date="1471250175595" expanded="true" signature="1719:1843" ph="..." />
-            <marker date="1471250175595" expanded="true" signature="1743:1842" ph="..." />
-            <marker date="1471250175595" expanded="true" signature="1934:1987" ph="{...}" />
-            <marker date="1471250175595" expanded="true" signature="2019:3070" ph="{...}" />
-            <marker date="1471250175595" expanded="true" signature="2104:3036" ph="..." />
-            <marker date="1471250175595" expanded="true" signature="2135:3035" ph="..." />
-            <marker date="1471250175595" expanded="true" signature="2257:2346" ph="..." />
-            <marker date="1471250175595" expanded="true" signature="2402:2990" ph="..." />
-            <marker date="1471250175595" expanded="true" signature="2543:2820" ph="..." />
-            <marker date="1471250175595" expanded="true" signature="2544:2819" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/ApiUserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/API/UserinfoController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1389">
@@ -1704,27 +1627,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+    <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="575">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
           <folding>
-            <marker date="1473670131882" expanded="false" signature="11:94" ph="..." />
-            <marker date="1473670131882" expanded="true" signature="136:689" ph="{...}" />
-            <marker date="1473670131882" expanded="true" signature="146:206" ph=" Run the migrations. ..." />
-            <marker date="1473670131882" expanded="true" signature="233:542" ph="{...}" />
-            <marker date="1473670131882" expanded="true" signature="263:534" ph="..." />
-            <marker date="1473670131882" expanded="true" signature="301:533" ph="..." />
-            <marker date="1473670131882" expanded="true" signature="551:615" ph=" Reverse the migrations. ..." />
-            <marker date="1473670131882" expanded="true" signature="644:687" ph="{...}" />
+            <marker date="1473671394960" expanded="true" signature="6:175" ph="//..." />
+            <marker date="1473671394960" expanded="true" signature="185:4034" ph="..." />
+            <marker date="1473671394960" expanded="true" signature="193:612" ph="..." />
+            <marker date="1473671394960" expanded="true" signature="656:1092" ph="..." />
+            <marker date="1473671394960" expanded="true" signature="1151:1799" ph="..." />
+            <marker date="1473671394960" expanded="true" signature="1825:2849" ph="..." />
+            <marker date="1473671394960" expanded="true" signature="1848:1999" ph="..." />
+            <marker date="1473671394960" expanded="true" signature="2023:2504" ph="..." />
+            <marker date="1473671394960" expanded="true" signature="2508:2843" ph="//..." />
+            <marker date="1473671394960" expanded="true" signature="2859:3292" ph="..." />
+            <marker date="1473671394960" expanded="true" signature="3337:3756" ph="..." />
+            <marker date="1473671394960" expanded="true" signature="3776:4030" ph="..." />
+            <marker date="1473671394960" expanded="true" signature="3828:4022" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_12_172849_create_admins_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+        <state relative-caret-position="736">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <folding>
+            <marker date="1473672862269" expanded="false" signature="11:94" ph="..." />
+            <marker date="1473672862269" expanded="true" signature="137:792" ph="{...}" />
+            <marker date="1473672862269" expanded="true" signature="147:207" ph=" Run the migrations. ..." />
+            <marker date="1473672862269" expanded="true" signature="234:633" ph="{...}" />
+            <marker date="1473672862269" expanded="true" signature="275:625" ph="..." />
+            <marker date="1473672862269" expanded="true" signature="314:624" ph="..." />
+            <marker date="1473672862269" expanded="true" signature="642:706" ph=" Reverse the migrations. ..." />
+            <marker date="1473672862269" expanded="true" signature="735:790" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_12_172601_create_deposits_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+          <folding>
+            <marker date="1473672922310" expanded="false" signature="11:94" ph="..." />
+            <marker date="1473672922310" expanded="true" signature="139:870" ph="{...}" />
+            <marker date="1473672922310" expanded="true" signature="149:209" ph=" Run the migrations. ..." />
+            <marker date="1473672922310" expanded="true" signature="236:709" ph="{...}" />
+            <marker date="1473672922310" expanded="true" signature="277:701" ph="..." />
+            <marker date="1473672922310" expanded="true" signature="318:700" ph="..." />
+            <marker date="1473672922310" expanded="true" signature="718:782" ph=" Reverse the migrations. ..." />
+            <marker date="1473672922310" expanded="true" signature="811:868" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_12_172347_create_dinners_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding>
+            <marker date="1473672950830" expanded="false" signature="11:94" ph="..." />
+            <marker date="1473672950830" expanded="true" signature="138:734" ph="{...}" />
+            <marker date="1473672950830" expanded="true" signature="148:208" ph=" Run the migrations. ..." />
+            <marker date="1473672950830" expanded="true" signature="235:574" ph="{...}" />
+            <marker date="1473672950830" expanded="true" signature="276:566" ph="..." />
+            <marker date="1473672950830" expanded="true" signature="316:565" ph="..." />
+            <marker date="1473672950830" expanded="true" signature="583:647" ph=" Reverse the migrations. ..." />
+            <marker date="1473672950830" expanded="true" signature="676:732" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_12_172147_create_dishes_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <marker date="1473672204188" expanded="false" signature="11:94" ph="..." />
+            <marker date="1473672204188" expanded="true" signature="137:728" ph="{...}" />
+            <marker date="1473672204188" expanded="true" signature="147:207" ph=" Run the migrations. ..." />
+            <marker date="1473672204188" expanded="true" signature="234:569" ph="{...}" />
+            <marker date="1473672204188" expanded="true" signature="275:561" ph="..." />
+            <marker date="1473672204188" expanded="true" signature="314:560" ph="..." />
+            <marker date="1473672204188" expanded="true" signature="578:642" ph=" Reverse the migrations. ..." />
+            <marker date="1473672204188" expanded="true" signature="671:726" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_12_171947_create_menus_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <marker date="1473672982286" expanded="false" signature="11:94" ph="..." />
+            <marker date="1473672982286" expanded="true" signature="136:649" ph="{...}" />
+            <marker date="1473672982286" expanded="true" signature="146:206" ph=" Run the migrations. ..." />
+            <marker date="1473672982286" expanded="true" signature="233:491" ph="{...}" />
+            <marker date="1473672982286" expanded="true" signature="274:483" ph="..." />
+            <marker date="1473672982286" expanded="true" signature="312:482" ph="..." />
+            <marker date="1473672982286" expanded="true" signature="500:564" ph=" Reverse the migrations. ..." />
+            <marker date="1473672982286" expanded="true" signature="593:647" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_12_171627_create_orders_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding>
+            <marker date="1473673040270" expanded="false" signature="11:94" ph="..." />
+            <marker date="1473673040270" expanded="true" signature="137:936" ph="{...}" />
+            <marker date="1473673040270" expanded="true" signature="147:207" ph=" Run the migrations. ..." />
+            <marker date="1473673040270" expanded="true" signature="234:777" ph="{...}" />
+            <marker date="1473673040270" expanded="true" signature="275:769" ph="..." />
+            <marker date="1473673040270" expanded="true" signature="314:768" ph="..." />
+            <marker date="1473673040270" expanded="true" signature="786:850" ph=" Reverse the migrations. ..." />
+            <marker date="1473673040270" expanded="true" signature="879:934" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_12_171354_create_times_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <marker date="1473671688015" expanded="false" signature="11:94" ph="..." />
+            <marker date="1473671688015" expanded="true" signature="136:601" ph="{...}" />
+            <marker date="1473671688015" expanded="true" signature="146:206" ph=" Run the migrations. ..." />
+            <marker date="1473671688015" expanded="true" signature="233:443" ph="{...}" />
+            <marker date="1473671688015" expanded="true" signature="274:435" ph="..." />
+            <marker date="1473671688015" expanded="true" signature="312:434" ph="..." />
+            <marker date="1473671688015" expanded="true" signature="452:516" ph=" Reverse the migrations. ..." />
+            <marker date="1473671688015" expanded="true" signature="545:599" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2016_09_12_171108_create_userinfos_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <folding>
+            <marker date="1473673091022" expanded="false" signature="11:94" ph="..." />
+            <marker date="1473673091022" expanded="true" signature="140:791" ph="{...}" />
+            <marker date="1473673091022" expanded="true" signature="150:210" ph=" Run the migrations. ..." />
+            <marker date="1473673091022" expanded="true" signature="237:629" ph="{...}" />
+            <marker date="1473673091022" expanded="true" signature="278:621" ph="..." />
+            <marker date="1473673091022" expanded="true" signature="320:620" ph="..." />
+            <marker date="1473673091022" expanded="true" signature="638:702" ph=" Reverse the migrations. ..." />
+            <marker date="1473673091022" expanded="true" signature="731:789" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding />
         </state>
       </provider>
